@@ -33,7 +33,7 @@ import { IdmModalComponent } from "./idm-modal/idm-modal.component";
       useValue: "en-US"
     }
   ],
-  entryComponents: IdmModalComponent,
+  entryComponents: [IdmModalComponent],
   bootstrap: [AppComponent],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
 })
