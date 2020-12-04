@@ -6,6 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./idm-modal.component.scss']
 })
 export class IdmModalComponent implements OnInit {
+  images: string[];
 
   constructor() { }
 
