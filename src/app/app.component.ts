@@ -105,7 +105,7 @@ export class AppComponent implements AfterViewInit {
           idmModalComponent.images = [
             "https://i.pinimg.com/originals/cc/18/8c/cc188c604e58cffd36e1d183c7198d21.jpg",
             "https://i.pinimg.com/originals/6c/70/53/6c7053f176c9e1ed8d8b25bd588ce070.jpg",
-            "https://i.pinimg.com/originals/ef/54/ce/ef54cef30933bee5a94dd3dbdba50e6c.jpg"
+            "https://i.pinimg.com/originals/09/d2/8f/09d28f2ea24e8aadca6f17ab90e4ee19.jpg"
           ]
         }
       )
