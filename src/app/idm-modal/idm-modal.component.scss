@@ -1,0 +1,27 @@
+::ng-deep #idm-modal-circlePager {
+    height: 100%;
+    .slides {
+        height: 100%;
+        .slide {
+            height: 100%;
+            .slide-content {
+                height: 100%;
+                .card {
+                    height: 100%;
+                    .card-content {
+                        height: 100%;
+                        #idm-enlarged-image {
+                            display: block;
+                            margin-left: auto;
+                            margin-right: auto;
+                            height: 98%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .controls {
+        top: 98%;
+    }
+}
