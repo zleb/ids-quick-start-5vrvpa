@@ -9,13 +9,16 @@ import {
 import {
   SohoPersonalizeDirective,
   SohoRenderLoopService,
-  SohoApplicationMenuComponent
+  SohoApplicationMenuComponent,
+  SohoModalDialogService
 } from "ids-enterprise-ng";
+
+import { IdmModalComponent } from './idm-modal/idm-modal.component';
 
 @Component({
   selector: "body", // tslint:disable-line
   templateUrl: "app.component.html",
-  styleUrls: ["./app.component.css"],
+  styleUrls: ["./app.component.scss"],
   encapsulation: ViewEncapsulation.None
 })
 export class AppComponent implements AfterViewInit {
@@ -99,8 +102,11 @@ export class AppComponent implements AfterViewInit {
       .modal<IdmModalComponent>(IdmModalComponent)
       .apply(
         (idmModalComponent): void => {
-          idmModalComponent.images = images;
-          idmModalComponent.index = info.action.index;
+          idmModalComponent.images = [
+            "https://i.pinimg.com/originals/cc/18/8c/cc188c604e58cffd36e1d183c7198d21.jpg",
+            "https://i.pinimg.com/originals/6c/70/53/6c7053f176c9e1ed8d8b25bd588ce070.jpg",
+            "https://i.pinimg.com/originals/ef/54/ce/ef54cef30933bee5a94dd3dbdba50e6c.jpg"
+          ]
         }
       )
       .cssClass("idm-modal")

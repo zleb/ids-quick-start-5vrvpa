@@ -1,0 +1,13 @@
+<div class="circlepager" id="idm-modal-circlePager" starting-slide="index" soho-circlepager>
+    <div class="slides">
+        <div class="slide" *ngFor="let image of images">
+            <div class="slide-content" id="idm-modal-slide-content">
+                <div class="card auto-size">
+                    <div class="card-content" id="cardImages">
+                        <img id="idm-enlarged-image" alt="{{image}}" [src]="image.ImageUri">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
